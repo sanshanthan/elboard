@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:elboard/home.dart';
+import 'package:elboard/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,10 +19,7 @@ class _SplashPageState extends State<Splash> {
   void navigateToPage() {
     Navigator.pushReplacement(
       (context),
-      MaterialPageRoute(
-          builder: (context) => MyHomePage(
-                title: 'ELBOARD',
-              )),
+      MaterialPageRoute(builder: (context) => LoginDemo()),
     );
   }
 
